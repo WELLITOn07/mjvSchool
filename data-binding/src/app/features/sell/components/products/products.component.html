@@ -1,0 +1,13 @@
+<body>
+    <h1>{{ titulo }}</h1>
+    <p (mouseenter)="passouMouse()" class="obter-desconto">PASSE O MOUSE</p>
+    <p>Descriçao do produto: {{ produto1.descricao }}</p>
+    <p>preço: {{ produto1.preco }}</p>
+    <p>Quantidade: {{ produto1.quantidade }}</p>
+    <p>Preço com desconto: {{ precoComDesconto (produto1.preco) }}</p>
+    <p><img src="{{ produto1.img }}" width="250px" height="250px"></p>
+    <br>
+    <button (click)="comprar()">COMPRAR</button>
+    <input type="text" (keyup)="pressionouTecla($event)">
+    <button (click)="obtendoDesconto()">Obter desconto</button>
+</body>

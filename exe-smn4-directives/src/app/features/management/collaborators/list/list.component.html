@@ -1,0 +1,31 @@
+<table appTable class="list">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Collaboratores</th>
+      <th>Wage</th>
+      <th>Office</th>
+      <th>Faults</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let collaborator of listCollaborators">
+      <td>{{ collaborator.id }}</td>
+      <td>{{ collaborator.name }}</td>
+      <td>{{ collaborator.wage }}</td>
+      <td>{{ collaborator.office }}</td>
+      <td>{{ collaborator.faults }}</td>
+    </tr>
+  </tbody>
+  <tfoot>
+      <tr>
+        <th colspan="5">apply warning</th>
+      <tr>
+
+
+        <tr *ngFor="let collaborator of listCollaborators">
+          <td colspan="5" *ngIf="collaborator.suspended">{{ collaborator.name }}</td>
+        </tr>
+  </tfoot>
+</table>
+

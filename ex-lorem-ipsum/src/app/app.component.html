@@ -1,0 +1,25 @@
+();
+            setAwaitContext(/*value*/ true);
+            var isExportEquals;
+            if (parseOptional(63 /* SyntaxKind.EqualsToken */)) {
+                isExportEquals = true;
+            }
+            else {
+                parseExpected(88 /* SyntaxKind.DefaultKeyword */);
+            }
+            var expression = parseAssignmentExpressionOrHigher();
+            parseSemicolon();
+            setAwaitContext(savedAwaitContext);
+            var node = factory.createExportAssignment(decorators, modifiers, isExportEquals, expression);
+            return withJSDoc(finishNode(node, pos), hasJSDoc);
+        }
+        var ParsingContext;
+        (function (ParsingContext) {
+            ParsingContext[ParsingContext["SourceElements"] = 0] = "SourceElements";
+            ParsingContext[ParsingContext["BlockStatements"] = 1] = "BlockStatements";
+            ParsingContext[ParsingContext["SwitchClauses"] = 2] = "SwitchClauses";
+            ParsingContext[ParsingContext["SwitchClauseStatements"] = 3] = "SwitchClauseStatements";
+            ParsingContext[ParsingContext["TypeMembers"] = 4] = "TypeMembers";
+            ParsingContext[ParsingContext["ClassMembers"] = 5] = "ClassMembers";
+            ParsingContext[ParsingContext["EnumMembers"] = 6] = "EnumMembers";
+            Pars

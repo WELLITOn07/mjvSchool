@@ -1,0 +1,25 @@
+<div class="div">
+    <table class="list">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>NOME</th>
+                <th>SALÁRIO</th>
+                <th>CARGO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{collaborator.id}}</td>
+                <td>{{collaborator.name}}</td>
+                <td>{{collaborator.wage}}</td>
+                <td>{{collaborator.office}}</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4"><button (click)="increase()">INCREASE 10% Wage of Collaborator</button></td>
+            </tr>
+        </tfoot>
+    </table>
+</div>

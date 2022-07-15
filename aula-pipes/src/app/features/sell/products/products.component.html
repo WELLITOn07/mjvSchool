@@ -1,0 +1,11 @@
+<div class="loja" *ngFor="let produtos of Loja">
+  <p>{{ produtos.name }}</p>
+  <img src="{{ produtos.img }}" style="width: 300px;">
+  <p>{{ produtos.velue | currency: 'R$'}}</p>
+  <div *ngIf="produtos.available === true">
+    <p style="color: green;">DISPONIVEL</p>
+  </div>
+  <div *ngIf="produtos.available === false">
+    <p style="color: red;">EM FALTA</p>
+  </div>
+</div>

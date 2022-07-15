@@ -1,0 +1,21 @@
+<h1>To-do List</h1>
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>DESCRIPTION</th>
+        <th>COMPLETED</th>
+        <th>DATE</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let list of listToDoList">
+        <td>{{ list.id }}</td>
+        <td>{{ list.description }}</td>
+        <td>{{ list.completed }}</td>
+        <td>{{ list.inclusionDate | date: 'd/m/yy, hh:mm a' }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

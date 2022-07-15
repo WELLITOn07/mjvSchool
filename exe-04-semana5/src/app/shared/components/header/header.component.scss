@@ -1,0 +1,16 @@
+ul {
+  list-style: none;
+  display: flex;
+  margin: 5px;
+  background-color: lightblue;
+  width: 400px;
+  margin: auto;
+}
+li {
+  padding: 10px;
+  cursor: pointer;
+}
+li:hover {
+  background-color: black;
+  color: aliceblue;
+}

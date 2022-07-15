@@ -1,0 +1,11 @@
+<div *ngIf="exibeDiv">
+
+    <div *ngFor="let c of produtos">
+        <p>Nome: {{ c.nome }}</p>
+        <p>Valor: {{ c.valor }}</p>
+        <p [ngClass]="{'em-estoque': c.disponivel, 'em-falta': !c.disponivel}">{{ c.disponivel ? 'Em estoque' : 'Em falta' }}</p>
+    </div>
+
+</div>
+
+<button (click)="exibeDivSimNao()">EXIBE DIV</button>
