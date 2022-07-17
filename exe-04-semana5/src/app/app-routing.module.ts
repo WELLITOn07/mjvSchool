@@ -5,7 +5,7 @@ import { LoginPageComponent } from './features/login/pages/login-page/login-page
 ;
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
   {path: 'login', component: LoginPageComponent},
   {path: 'registereds', component: RegisteredsPageComponent}
