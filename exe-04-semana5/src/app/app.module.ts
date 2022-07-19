@@ -20,7 +20,6 @@ registerLocaleData(localePt);
     AppRoutingModule,
     HomeModule,
     LoginModule,
-    RegisteredModule
   ],
   providers: [
     {
