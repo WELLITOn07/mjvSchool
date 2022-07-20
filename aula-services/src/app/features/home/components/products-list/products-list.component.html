@@ -11,7 +11,7 @@
         <td>{{ c.descrition }}</td>
         <td>{{ c.value  | currency: 'R$'}}</td>
         <td><img src="{{ c.img }}"></td>
-        <td><button>DETAILS</button></td>
+        <td><button (click)="detalhesProduto(c.id)">DETAILS</button></td>
       </tr>
     </tbody>
   </table>

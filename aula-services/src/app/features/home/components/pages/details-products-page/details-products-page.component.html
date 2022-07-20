@@ -1,0 +1,19 @@
+<app-header></app-header>
+<div>
+  <table>
+    <thead>
+      <th>Descrição</th>
+      <th>Quantidade</th>
+      <th>Disponivel</th>
+    </thead>
+    <tbody>
+      <tr *ngIf="product">
+        <td>{{ product.descrition}}</td>
+        <td>{{ product.amount}}</td>
+        <td *ngIf="product.available == true">sim</td>
+        <td *ngIf="product.available == false">não</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<app-footer></app-footer>
