@@ -1,0 +1,16 @@
+nav {
+  width: 600px;
+  margin: auto;
+}
+ul {
+  width: 100%;
+  margin: auto;
+  text-align: left;
+}
+li {
+  list-style: none;
+  cursor: pointer;
+}
+li:hover {
+  color: red;
+}

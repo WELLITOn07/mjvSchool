@@ -1,0 +1,18 @@
+<div class="divProducts">
+  <h1 class="h1">LOJA</h1>
+  <table class="tableProducts">
+    <thead>
+      <tr>
+        <th colspan="4">VIDEO GAMES</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let c of products">
+        <td>{{ c.descrition }}</td>
+        <td>{{ c.value  | currency: 'R$'}}</td>
+        <td><img src="{{ c.img }}"></td>
+        <td><button>DETAILS</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
