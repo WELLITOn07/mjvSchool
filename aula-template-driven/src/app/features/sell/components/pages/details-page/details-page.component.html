@@ -1,0 +1,24 @@
+<app-header></app-header>
+<div *ngIf="product">
+  <table>
+      <thead>
+        <tr>
+          <th colspan="3">{{product.description}}</th>
+        </tr>
+        <tr>
+          <th>Amount</th>
+          <th>Available</th>
+          <th>Width</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{ product.amount }}</td>
+          <td *ngIf="product.available == true">yes</td>
+          <td *ngIf="product.available == false">no</td>
+          <td>{{ product.width }}</td>
+        </tr>
+      </tbody>
+  </table>
+</div>
+<app-footer></app-footer>

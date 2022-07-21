@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+* {
+  padding: 0px;
+  margin: 0px;
+};
+body {
+  box-sizing: border-box;
+  padding: 10px;
+};
+h1 {
+  font-family: 'Lobster', cursive;
+  width: 600px;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+  font-size: 3em;
+};
+.divStore {
+  font-family: 'Times New Roman', Times, serif;
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  background-color: black;
+};
+.divStore p {
+  text-align: center;
+  color: aliceblue;
+}
+.divStore img {
+  width: 80%;
+  height: 200px;
+  margin: 10px;
+}
+.divStore img:hover {
+  border: 1px solid black;
+  box-shadow: 1px 1px 5px black;
+}
+button {
+  width: 98%;
+  padding: 5px;
+}

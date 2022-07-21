@@ -1,0 +1,9 @@
+<h1>STORE HAPPY PEOPLE`s</h1>
+<div class="divStore">
+  <div *ngFor="let product of products">
+    <button (click)="detailsProducts(product.id)">DETAILS</button>
+    <p><img src="{{ product.img }}"></p>
+    <p>{{ product.description }}</p>
+    <p>{{ product.value | currency: 'R$'}}
+  </div>
+</div>
